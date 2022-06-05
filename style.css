@@ -1,0 +1,51 @@
+
+/* DESKTOP */
+
+.news{
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.news article img {
+    width: 100%;
+}
+
+.news article{
+    margin: 5px 10px;
+    width: 25%;
+    background-color: #999;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.news .main{
+ 
+   width: 50%;
+}
+.news .main + article{
+    order: -1;
+}
+
+/* MOBILE */
+@media (max-width:1240px){
+.news{
+    width: 92%;
+    margin: 0 auto;
+
+    flex-direction: column;
+}
+
+.news article,
+.news .main{
+   width: 100%;
+  
+}
+
+.news .main{
+    order: -2;
+}
+}
